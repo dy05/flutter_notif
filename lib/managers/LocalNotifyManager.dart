@@ -73,7 +73,7 @@ class LocalNotifyManager {
       playSound: true,
       enableLights: true,
       enableVibration: true,
-      ledColor: Colors.green,
+      // ledColor: Colors.green,
       priority: Priority.high
     );
 

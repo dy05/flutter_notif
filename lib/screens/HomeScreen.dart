@@ -36,7 +36,20 @@ class _HomeScreenState extends State<HomeScreen> {
           onPressed: () async {
             await localNotifyManager.showNotification();
           },
-          child: Text('Send Notification'),
+          child: Container(
+            decoration: new BoxDecoration(
+              color: Colors.redAccent,
+              borderRadius: new BorderRadius.circular(8)
+            ),
+            padding: EdgeInsets.fromLTRB(30, 10, 30, 10),
+            child: Text(
+              'Send Notification',
+              style: Theme.of(context)
+                  .textTheme
+                  .headline6!
+                  .copyWith(color: Colors.white)
+            )
+          ),
         ),
       ),
     );
